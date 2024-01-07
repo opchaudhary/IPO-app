@@ -7,9 +7,9 @@ import { Navigate } from 'react-router-dom';
 
 const Register = () => {
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
+    username: 'omprakash',
+    email: 'omprakash@gmail.com',
+    password: '123456789',
   });
 
   const [isSuccesfull, setIsSuccessful]=useState(false);

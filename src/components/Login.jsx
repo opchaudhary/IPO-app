@@ -33,7 +33,8 @@ const Login = () => {
       alert("Login successfully")
       console.log("Login Successfully!",credentials.username);
     } else {
-      alert('Invalid username or password');
+      console.log("invalid username or password!",credentials.username);
+      alert('invalid username or password');
     }
   };
   
@@ -68,7 +69,9 @@ const Login = () => {
           Login
         </button>
       </form> 
-
+      <p data-testid="error-message">
+        Invalid username or password. Please try again.
+      </p>
       <p>
         Don't have an account? <Link to="/register">Register here</Link>.
       </p>
